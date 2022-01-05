@@ -7,7 +7,7 @@ const ItsABoy: NextPage = () => {
   return (
     <div className={styles.containerBoy} >
       <video className={styles.video} controls autoPlay>
-        <source src="https://res.cloudinary.com/mmogomedia/video/upload/v1641412511/reveal/Blue_Stars_Watercolor_Boy_Baby_Shower_Animated_Square_Invitation_1_1_jfiesv.mp4" type="video/mp4"/>
+        <source src="https://res.cloudinary.com/mmogomedia/video/upload/v1641417334/reveal/glory.mp4" type="video/mp4"/>
       </video>
     </div>
   )
