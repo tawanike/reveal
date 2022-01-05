@@ -1,8 +1,10 @@
 import type { NextPage } from 'next'
+import { useRouter } from 'next/router'
 import { useState } from 'react';
 import styles from '../styles/Home.module.css'
 
 const GuessTheGender: NextPage = () => {
+  const router = useRouter();
   const [value, setValue] = useState<any>();
 
   const handleSubmit = async (event: any) => {
@@ -17,7 +19,7 @@ const GuessTheGender: NextPage = () => {
       body: JSON.stringify(payload)
     }).then((response: any) => {
         console.log(response.json());
-        window.location = '/its-a-boy';
+        router.push('/its-a-boy')
     }).catch((error) => {
       console.log(error);
     });
